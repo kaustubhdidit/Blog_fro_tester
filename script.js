@@ -31,7 +31,7 @@ function register() {
     const username = document.getElementById("registerUsername").value;
     const password = document.getElementById("registerPassword").value;
     const email = document.getElementById("registerEmail").value;
-    
+    const backendUrl = "https://blogger-springboot-sca.onrender.com";
 
     // Define the request body
     const body = {
@@ -41,7 +41,7 @@ function register() {
     };
 
     // Make the POST request to the API
-    fetch(`${backendurl}.onrender.com/users`, {
+    fetch(`https://blogger-springboot-sca.onrender.com/users`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
