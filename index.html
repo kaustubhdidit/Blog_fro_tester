@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Navbar -->
+        <nav>
+            <a href="#" onclick="showSection('login')">Login</a>
+            <a href="#" onclick="showSection('register')">Register</a>
+            <a href="#" onclick="showSection('createArticle')">Create Article</a>
+            <a href="#" onclick="showSection('articles')">View Articles</a>
+        </nav>
+
+        <!-- Login Section -->
+        <section id="login" class="section">
+            <h2>Login</h2>
+            <input type="text" id="loginUsername" placeholder="Username">
+            <input type="password" id="loginPassword" placeholder="Password">
+            <button onclick="login()">Login</button>
+        </section>
+
+        <!-- Register Section -->
+       <!-- Register Section -->
+<section id="register" class="section">
+    <h2>Register</h2>
+    <input type="text" id="registerUsername" placeholder="Username">
+    <input type="password" id="registerPassword" placeholder="Password">
+    <input type="email" id="registerEmail" placeholder="Email"> <!-- New email field -->
+    <button onclick="register()">Register</button>
+</section>
+
+
+        <!-- Create Article Section -->
+        <section id="createArticle" class="section">
+            <h2>Create Article</h2>
+            <input type="text" id="articleTitle" placeholder="Article Title">
+            <textarea id="articleContent" placeholder="Article Content"></textarea>
+            <button onclick="createArticle()">Create Article</button>
+        </section>
+
+        <!-- Articles Section -->
+        <section id="articles" class="section">
+            <h2>Articles</h2>
+            <div id="articleList"></div>
+        </section>
+
+        <!-- Comments Section (For individual articles) -->
+        <section id="comments" class="section">
+            <h2>Comments</h2>
+            <div id="commentList"></div>
+            <input type="text" id="newComment" placeholder="Add a comment">
+            <button onclick="addComment()">Comment</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
